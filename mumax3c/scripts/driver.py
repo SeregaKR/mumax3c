@@ -11,6 +11,7 @@ def driver_script(driver, system, compute=None, ovf_format="bin4", **kwargs):
     mx3 = "tableadd(E_total)\n"
     mx3 += "tableadd(dt)\n"
     mx3 += "tableadd(maxtorque)\n"
+    mx3 += "tableadd(m_full)\n"
 
     if isinstance(driver, mc.MinDriver):
         for attr, value in driver:
